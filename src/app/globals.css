@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-[#0a0a0a] text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .card-dark {
+    @apply bg-[#1a1a1a] border border-gray-800 rounded-lg;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-4 py-2.5 text-gray-400 hover:text-white hover:bg-[#1a1a1a] rounded-lg transition-colors cursor-pointer;
+  }
+  
+  .sidebar-item-active {
+    @apply bg-[#1a1a1a] text-white;
+  }
+}
